@@ -1,0 +1,49 @@
+body {
+    background-color: #69ffff;
+}
+
+h3 {
+    color: black;
+    
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: gray;
+    border-width: 5px;
+    width: 5%;
+}
+
+label,li, a,p,tr {
+    color: rgb(0, 0, 0);
+}
+img{
+    position: relative;
+    
+}
+.Hobbies { 
+    position: relative;
+    color: #f4f4f4;
+    text-decoration: none;
+    z-index: 1;
+    padding: 0 .2rem;
+    transition: color .2s;
+}
+
+.Hobbies::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 92% 0 0 0;
+    background: #58A6FF;
+    transition: inset .2s;
+}
+
+.Hobbies:hover{
+    color: #0D1117;
+}
+
+.Hobbies:hover::after{
+    inset: 0 0 0 0;
+}
